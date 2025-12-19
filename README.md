@@ -36,6 +36,5 @@ It demonstrates data cleaning, feature engineering, business analysis, and creat
 - `Data/` — CSV of cleaned dataset
 - `SQL/` — All SQL scripts organised by purpose
 
-## Next Steps
-- Connect `vw_PowerBI_CustomerPurchases` to Power BI for dashboard visualisations
+
 
