@@ -19,5 +19,17 @@ UPDATE CustomerPurchaseHistory
 SET PurchaseMonth = DATENAME(MONTH, PurchaseDate);
 GO
 
--- Optional: Add CustomerSpendCategory based on total spend
+-- Optional: I can Add CustomerSpendCategory based on total spend
+
+WITH CustomerSpending AS (
+    SELECT
+        CustomerID,
+        CustomerName,
+        SUM(TotalPrice) AS TotalSpent
+    FROM CustomerPurchaseHistory
+    GROUP BY CustomerID, CustomerName
+)
+SELECT TOP 10 *
+FROM CustomerSpending
+ORDER BY TotalSpent DESC;
 -- Can create logic later when doing aggregated queries
