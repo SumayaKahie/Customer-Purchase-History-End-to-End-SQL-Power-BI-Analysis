@@ -14,5 +14,5 @@ I built an end-to-end data analytics project using SQL for data cleaning &amp; a
 | ReviewRating    | Customer rating (1–5)       |
 | TotalPrice      | Quantity × UnitPrice        |
 
-*** Cleaning
+***Cleaning
 I performed comprehensive data quality checks including NULL validation, business rule validation, and calculated field verification using SQL.
