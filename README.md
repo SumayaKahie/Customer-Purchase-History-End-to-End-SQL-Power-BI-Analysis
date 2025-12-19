@@ -14,8 +14,28 @@ I built an end-to-end data analytics project using SQL for data cleaning &amp; a
 | ReviewRating    | Customer rating (1–5)       |
 | TotalPrice      | Quantity × UnitPrice        |
 
-***Cleaning and preparing
-• I performed comprehensive data quality checks including NULL validation, business rule validation, and calculated field verification using SQL.
-• Performed revenue, customer, product, and time-series analysis using SQL Server
-• Built business KPIs including total revenue, AOV, and top customer analysis
-• I created reusable SQL views and used CTEs to structure analytical logic and prepare optimised datasets for BI tools.
+
+# Customer Purchase History Project
+
+## Overview
+This project analyzes a customer purchase dataset using SQL Server.  
+It demonstrates data cleaning, feature engineering, business analysis, and creation of reusable SQL views and CTEs.  
+
+## Dataset
+- 1,800 rows of customer purchase history
+- Columns include CustomerID, Product, Quantity, UnitPrice, TotalPrice, PaymentMethod, ReviewRating, etc.
+
+## Skills Demonstrated
+- SQL Server: database creation, table design, data ingestion
+- Data Quality: NULL checks, business logic validation
+- Feature Engineering: PurchaseYear, PurchaseMonth
+- Business Analysis: total revenue, revenue by category, top products/customers, AOV
+- Advanced SQL: CTEs, views for reuse and Power BI integration
+
+## Files
+- `Data/` — CSV of cleaned dataset
+- `SQL/` — All SQL scripts organised by purpose
+
+## Next Steps
+- Connect `vw_PowerBI_CustomerPurchases` to Power BI for dashboard visualisations
+
